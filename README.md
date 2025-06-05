@@ -26,13 +26,13 @@ Python must be installed and accessible from your system's PATH. The script uses
 1. Clone this repository or download the project files:
 
 ```bash
-git clone https://github.com/roycec133/python-cli-calculator.git
+git clone https://github.com/roycec133/Python-calculator.git
 ```
 
 2. Navigate into the project directory:
 
 ```bash
-cd python-cli-calculator
+cd python-calculator
 ```
 
 3. (Optional for Linux/macOS) Make the script executable:
