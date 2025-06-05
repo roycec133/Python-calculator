@@ -1,0 +1,8 @@
+v1.0 – June 5, 2025
+-------------------
+- First complete version of CLI calculator
+- Supported operations: +, -, *, /, //, **
+- Input parsing with split()
+- Division by zero handling
+- Infinite loop with "q" to quit
+- Float input support
