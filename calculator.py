@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+  #!/usr/bin/env python
 
 import math
 
@@ -31,6 +31,16 @@ class Calculation():
     return ans
 
 
+class Trigcalculation(Calculation):
+  def trigcalculate(self):
+    if self.operator == "cos":
+      return math.cos(math.radians(self.num1))
+    elif self.operator == "sin":
+      return math.sin(math.radians(self.num1))
+    elif self.operator == "tan":
+      return math.tan(math.radians(self.num1))
+
+
 while True:
   try:
     operation = input("input an operation (ex. 5 + 2) or press q to quit anytime: ")
@@ -48,6 +58,15 @@ while True:
           print(math.sqrt(int(parts[1])))
         else:
           print("Error: entered sqaure root of a negative")
+      elif parts[0] in ["cos", "sin", "tan"]:
+
+        operator = parts[0]
+
+        num1 = float(parts[1])
+
+        currentcalc = Trigcalculation(num1, operator, 0)
+
+        print(currentcalc.trigcalculate())
       else:
         num1 = float(parts[0])
 
@@ -58,9 +77,6 @@ while True:
         currentcalc = Calculation(num1, operator, num2)
 
         print(currentcalc.calculate())
-
-      
-
   except ValueError:
     print('Invalid number entered. Please make sure to enter something like: 5 + 2')
   
