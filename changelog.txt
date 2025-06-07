@@ -19,7 +19,14 @@ v1.1.0 - June 7, 2025
 - Corrected division-by-zero logic in `/` and `//` operations
 - Fixed variable scope issues inside `calculate()` method
 
-
+v1.2.0 - June 7, 2025
+---------------------
+- Added `Trigcalculation` class inheriting from `Calculation` to handle scientific operations
+- Implemented trigonometric functions: `sin`, `cos`, and `tan`, using `math.radians()`
+- Extended CLI input parser to support trigonometric input (e.g., `sin 30`)
+- Improved structure and modularity of code through method overriding and inheritance
+- Cleaned up conditional logic for operator parsing and trig dispatch
+- Strengthened program stability and maintainability in preparation for GUI integration
 
 
 

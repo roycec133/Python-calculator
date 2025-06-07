@@ -1,6 +1,6 @@
-# Python CLI Calculator
+# Python CLI Scientific Calculator
 
-This project is a command-line calculator application written entirely in Python. It supports multiple arithmetic operations, handles user input interactively, and manages edge cases such as division by zero. The tool is designed to run in any terminal environment.
+This project is a command-line scientific calculator written in Python. It supports a wide range of arithmetic operations, square roots, and trigonometric functions. The app is fully interactive, handles edge cases like division by zero and invalid input, and is designed using clean object-oriented programming principles.
 
 ## Features
 
@@ -15,6 +15,11 @@ This project is a command-line calculator application written entirely in Python
 - Supports float and integer input
 - Runs in a loop until the user chooses to quit
 - Clean and readable function-based code structure
+- Trigonometric operations:
+  - Sine: `sin <angle in degrees>`
+  - Cosine: `cos <angle in degrees>`
+  - Tangent: `tan <angle in degrees>`
+- Continuous loop until user exits with `q`
 
 ## Requirements
 
