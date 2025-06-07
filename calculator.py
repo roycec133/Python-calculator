@@ -1,47 +1,70 @@
 #!/usr/bin/env python
 
-def calculation(num1,operator,num2):
-      if operator == "*":
-        ans = num1 * num2
-        print(ans)
-      elif operator == "**":
-        ans = num1 ** num2
-        print(ans)
-      elif operator == "+":
-        ans = num1 + num2
-        print(ans)
-      elif operator == "-":
-        ans = num1 - num2
-        print(ans)
-      elif operator == "/":
-        if num2 == 0:
-          print('infinity (divided by zero)')
-        else:
-          ans = num1 / num2
-          print(ans)
-      elif operator == "//":
-        if num2 == 0:
-          print('error (divided by zero)')
-        else:
-          ans = num1 // num2
-          print(ans)
+import math
+
+class Calculation():
+
+  def __init__(self, num1, operator, num2):
+    self.num1 = num1
+    self.operator = operator
+    self.num2 = num2
+  
+  def calculate(self):
+    if self.operator == "*":
+        ans = self.num1 * self.num2
+    elif self.operator == "**":
+      ans = self.num1 ** self.num2
+    elif self.operator == "+":
+      ans = self.num1 + self.num2
+    elif self.operator == "-":
+      ans = self.num1 - self.num2
+    elif self.operator == "/":
+      if self.num2 == 0:
+         ans= 'infinity (divided by zero)'
+      else:
+        ans = self.num1 / self.num2
+    elif self.operator == "//":
+      if self.num2 == 0:
+        ans = 'error (divided by zero)'
+      else:
+          ans = self.num1 // self.num2
+    return ans
+
 
 while True:
-  operation = input("input an operation (ex. 5 + 2) or press q to quit anytime: ")
-  if operation == 'q':
-    print('exiting calculator')
-    break
-  else:
+  try:
+    operation = input("input an operation (ex. 5 + 2) or press q to quit anytime: ")
+    if operation == 'q':
+      print('exiting calculator')
 
-    parts = operation.split(" ")
+      break
 
-    num1 = float(parts[0])
+    else:
 
-    num2 = float(parts[2])
+      parts = operation.split(" ")
 
-    operator = parts[1]
+      if parts[0] == "sqrt":
+        if int(parts[1]) >= 0:
+          print(math.sqrt(int(parts[1])))
+        else:
+          print("Error: entered sqaure root of a negative")
+      else:
+        num1 = float(parts[0])
 
-    calculation(num1,operator,num2)
+        num2 = float(parts[2])
+
+        operator = parts[1]
+
+        currentcalc = Calculation(num1, operator, num2)
+
+        print(currentcalc.calculate())
+
+      
+
+  except ValueError:
+    print('Invalid number entered. Please make sure to enter something like: 5 + 2')
+  
+  
 
 
 
