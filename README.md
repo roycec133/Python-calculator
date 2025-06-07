@@ -10,6 +10,7 @@ This project is a command-line calculator application written entirely in Python
 - Division (`/`)
 - Floor Division (`//`)
 - Exponentiation (`**`)
+- Square root operation: `sqrt <number>`
 - Handles division by zero
 - Supports float and integer input
 - Runs in a loop until the user chooses to quit

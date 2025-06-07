@@ -6,3 +6,30 @@ v1.0 – June 5, 2025
 - Division by zero handling
 - Infinite loop with "q" to quit
 - Float input support
+
+
+v1.1.0 - June 7, 2025
+---------------------
+- Square root (`sqrt`) operation support using `math.sqrt()`
+- Input format handler for 2-part operations (e.g., `sqrt 25`)
+- Error message for square root of negative numbers
+- Refactored calculator logic into an OOP structure using a `Calculation` class
+- Updated CLI input handling to support both standard operations and square root
+- Improved error handling for input format and value errors
+- Corrected division-by-zero logic in `/` and `//` operations
+- Fixed variable scope issues inside `calculate()` method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
