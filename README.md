@@ -1,6 +1,6 @@
-# Python CLI Scientific Calculator
+# Python CLI + GUI Scientific Calculator
 
-This project is a command-line scientific calculator written in Python. It supports a wide range of arithmetic operations, square roots, and trigonometric functions. The app is fully interactive, handles edge cases like division by zero and invalid input, and is designed using clean object-oriented programming principles.
+This project is a fully functional scientific calculator written in Python. It started as a simple command-line calculator and has evolved into a modern calculator with both command-line (CLI) and graphical user interface (GUI) versions. The GUI is built using CustomTkinter and features a custom math parser and calculation engine, allowing it to parse and evaluate mathematical expressions without relying on Python’s eval() function.
 
 ## Features
 
@@ -20,12 +20,19 @@ This project is a command-line scientific calculator written in Python. It suppo
   - Cosine: `cos <angle in degrees>`
   - Tangent: `tan <angle in degrees>`
 - Continuous loop until user exits with `q`
+- Modern GUI with CustomTkinter
+- Custom math parser — parses expressions like 5 + 3 * 2 with correct operator precedence
+- Dedicated calculation engine (no eval())
+-  Multiple GUI themes: Dark, Light, and Pastel
+- Handles negative numbers correctly (e.g., -5 + 3)
 
 ## Requirements
 
-- Python version **3.6 or higher**
+- Python version **3.9 or higher**
 
-Python must be installed and accessible from your system's PATH. The script uses features such as f-strings introduced in Python 3.6.
+While it may work on 3.6+, certain versions of tkinter bundled with older Python versions can cause GUI rendering issues, style bugs, or missing widget features.
+
+CLI version remains compatible with Python 3.6+
 
 ## Installation
 

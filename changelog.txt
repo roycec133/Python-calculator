@@ -28,10 +28,18 @@ v1.2.0 - June 7, 2025
 - Cleaned up conditional logic for operator parsing and trig dispatch
 - Strengthened program stability and maintainability in preparation for GUI integration
 
-
-
-
-
+v1.3.0 - June 19, 2025
+---------------------
+- Graphical User Interface (GUI) built with CustomTkinter
+- Theme support with three themes: Dark, Light, and Joy Pastel
+- Custom math parser for evaluating expressions safely without using eval()
+- Calculation engine with correct operator precedence handling (* and / before + and -)
+- Support for negative numbers in expressions (e.g., -5 + 3)
+- Mouse-based input with clickable buttons in GUI
+- Drop-down theme selector to change UI themes in real time
+- Error handling for invalid expressions (shows error message instead of crashing)
+- Refactored code structure to separate CLI logic, parser logic, and GUI components
+- Improved CLI input handling to better support trigonometric functions, square roots, and error cases
 
 
 
